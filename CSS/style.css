@@ -87,7 +87,7 @@ h2{
 }
 
 .bg-beige{
-    background-color: rgb(243, 241, 236);
+    background-color: rgba(243, 241, 236, 0.233);
 }
 
 nav{
@@ -351,6 +351,9 @@ footer h3{
     .pt-400{
         padding-top: 0;
     }
+    .card_content{
+        height: 100%;
+    }
 }
 @media screen and (max-width: 700px){
     .card_content{
@@ -422,8 +425,11 @@ footer h3{
 @media screen and (max-width: 800px){
     .card_content{
         padding: 20px;
-        height: 90vh;
+        height: 100%;
     }
+    /* .card{
+        height: 100%;
+    } */
     .card_content img{
         max-width: 300px;
     }
