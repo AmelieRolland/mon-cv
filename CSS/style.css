@@ -425,14 +425,24 @@ footer h3{
 
 @media screen and (max-width: 800px){
     .card_content{
-        padding: 20px;
+        padding: 30px;
         height: auto;
     }
-    /* .card{
-        height: 100%;
-    } */
+    .card_content h3{
+        padding-top: 30px;
+    }
+    .card{
+        height: auto;
+        margin-top: 30px;
+
+    }
     .card_content img{
         max-width: 300px;
+        padding-top: 30px;
+    }
+
+    .contenu-projet{
+        padding-bottom: 50px;
     }
 
 
