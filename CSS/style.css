@@ -445,7 +445,9 @@ footer h3{
         padding-bottom: 50px;
     }
 
-
+    .texteParcours{
+        padding-top: 30px;
+    }
 
      .pin-wrap{
         flex-direction: column;
