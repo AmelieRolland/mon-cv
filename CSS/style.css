@@ -351,14 +351,11 @@ footer h3{
     .pt-400{
         padding-top: 0;
     }
-    .card_content{
-        height: 100%;
-    }
+
 }
 @media screen and (max-width: 700px){
     .card_content{
         padding: 0%;
-        height: 90vh;
     }
     .pt-400{
         padding-top: 300px;
@@ -425,13 +422,17 @@ footer h3{
 @media screen and (max-width: 800px){
     .card_content{
         padding: 20px;
-        height: 100%;
+        height: auto;
     }
     /* .card{
         height: 100%;
     } */
     .card_content img{
         max-width: 300px;
+    }
+
+    .p-50{
+        padding: 30px;
     }
 
      .pin-wrap{
