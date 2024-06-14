@@ -34,9 +34,13 @@ h2{
     height: 50vh;
     background: linear-gradient(rgba(243, 241, 236, 0), rgb(243, 241, 236));
 }
+
+.svg-orange{
+    fill: #3e3e34;
+    transition: fill 1s ease-out ;
+}
 .svg-orange:hover{
     fill: #ff7300;
-    transition: 1s ease-out;
 }
 
 .recherche{
@@ -201,18 +205,17 @@ nav{
     overflow: visible;
 
     view-timeline-name: --section-pin-tl;
-    view-timeline-axis: block;
+    view-timeline-axis: block; 
 }
 
 .pin-wrap-sticky{
     height: 100vh;
-	position: sticky;
+	/* position: sticky; */
 	top: 0;
     background-color: rgb(243, 241, 236);
     margin: 0;
     padding-left: 80px;
-
-	overflow-x: hidden;
+	overflow-x: visible;
 }
 
 .pin-wrap {
@@ -220,18 +223,18 @@ nav{
     justify-content: flex-start;
     align-items: center;
     margin: 0;
-    /* padding: 50px 10vw; */
+    padding: 50px 10vw;
     
     height: 80vh;
-    width: 360vmax;
+    width: 350vmax;
 
     /* Hook animation */
-    will-change: transform;
-    animation: linear move forwards;
+    /* will-change: transform;
+    animation: linear move forwards; */
 
     /* Link animation to view-timeline */
-    animation-timeline: --section-pin-tl;
-    animation-range: contain 0% contain 100%;
+    /* animation-timeline: --section-pin-tl;
+    animation-range: contain 0% contain 100%; */
     
  }
 
@@ -241,7 +244,6 @@ nav{
     padding: 50px;
     margin-right: 50px;
     margin-left: 50px;
-    /* box-shadow: 12px 12px 2px 1px #ccb8f461; */
     box-shadow:10px 10px 20px rgb(71, 45, 6);
 
 }
@@ -417,7 +419,7 @@ footer h3{
    .pin-wrap-sticky{
     top: 0;
     bottom: 0;
-   }
+   } */
    h2{
     font-size: 2em;
    }
@@ -486,6 +488,46 @@ footer h3{
     }
 
 }
+
+@media (max-width: 768px) {
+    .pin-wrap {
+        height: auto;
+        max-height: calc(100vh - 100px);
+        width: 100vw;
+        overflow-x: hidden;
+        overflow-y: visible; 
+        padding: 0;
+    }
+
+    /* Annuler l'animation */
+    .pin-wrap.animate {
+        animation: none;
+    }
+
+    /* Empêcher le scroll horizontal */
+     body {
+        overflow-x: hidden;
+    } 
+    .monParcours{
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    
+    }
+    .pin-wrap-sticky {
+        padding: 0;
+        position: static;
+    }
+
+    #sectionPin {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+
+}
+
 
 
 
