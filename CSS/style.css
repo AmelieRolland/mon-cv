@@ -210,7 +210,7 @@ nav{
 
 .pin-wrap-sticky{
     height: 100vh;
-	/* position: sticky; */
+	position: sticky;
 	top: 0;
     background-color: rgb(243, 241, 236);
     margin: 0;
