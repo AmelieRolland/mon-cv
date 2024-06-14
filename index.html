@@ -1744,19 +1744,21 @@
 
         // Scroll-Linked Animation
         $pinWrap.animate(
-            {
-                transform: [``, `translateX(calc(-100% + 100vw))`],
-            },
-            {
-                timeline: new ViewTimeline({
-                    subject: $sectionPin,
-                    axis: 'block',
-                }),
-                fill: 'forwards',
-                rangeStart: `contain 0%`,
-                rangeEnd: `contain 100%`,
-            }
-        );
+    {
+        transform: [``, `translateX(calc(-100% + 100vw))`],
+    },
+    {
+        timeline: new ViewTimeline({
+            subject: $sectionPin,
+            axis: 'block',
+        }),
+        fill: 'forwards',
+        rangeStart: `contain 0%`,
+        rangeEnd: `contain 100%`,
+    }
+).onfinish = function() {
+    console.log('Animation finished');
+};
     </script>
 
 </body>
