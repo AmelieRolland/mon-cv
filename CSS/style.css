@@ -195,7 +195,6 @@ nav{
 @supports (animation-timeline: view()){
     @keyframes move {
         to {
-            /* Move horizontally so that right edge is aligned against the viewport */
             transform: translateX(calc(-100% + 100vw));
             left: 0px;
         }}
@@ -203,9 +202,9 @@ nav{
 #parcours{
     height: 700vh;
     overflow: visible;
-
+/* 
     view-timeline-name: --section-pin-tl;
-    view-timeline-axis: block; 
+    view-timeline-axis: block;  */
 }
 
 .pin-wrap-sticky{
